@@ -1,0 +1,117 @@
+ /* Made with http://icomoon.io/ */
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background: #333;
+}
+
+a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+/* Intro sides */
+.side {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.codropsheader h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.codropsheader > span {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1.15em;
+    line-height: 1.125em;
+    font-weight: 700;
+    color: #9a9a9a;
+    -moz-transition: color .75s ease-out;
+    -o-transition: color .75s ease-out;
+    -webkit-transition: color .75s ease-out;
+    transition: color .75s ease-out;
+}
+
+.profile{
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+
+.demos {
+	display: inline-block;
+	line-height: 2.4em;
+	margin-left: 1em;
+	float: right;
+}
+
+.demos a {
+	display: inline-block;
+	color: #fff;
+	margin: 0 0.5em;
+}
+
+.demos a:hover,
+.demos a:focus,
+.demos a.current {
+	color: rgba(0,0,0,.4);
+}
+
+@media screen and (max-width: 73.375em) {
+	.codropsheader {
+		text-align: center;
+		padding-top: 10px;
+	}
+	.codropsheader h1,
+	.codropsheader nav,
+	.demos {
+		float: none;
+		margin: 0 auto;
+		padding: 0.15em 0;
+	}
+	.codropsheader > span {
+		padding: 0;
+	}
+	.codropsheader > span span:after {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 30.25em) {
+	.codropsheader nav { display: none; }
+}

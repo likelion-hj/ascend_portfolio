@@ -1,0 +1,102 @@
+/* Header */
+
+body {
+   position: relative;
+   padding-top: 1em;
+}
+
+#header {
+    z-index: 999;
+    position: absolute;
+}
+
+#header button {
+       background: orange;
+       border-radius: 2px;
+        border: 0;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        height: 3.5em;
+        line-height: 3.65em;
+        padding: 0 2.25em;
+        text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+   #header {
+      min-width: 320px;
+   }
+
+}
+
+/*Modal*/
+.modal-content h1, h2, h3{
+   color: black;
+   font-family: MontSerrat,Tahoma,Arial,sans-serif
+}
+
+span{
+   color:orange;
+}
+
+.modal-content {
+   width: 700px;
+	height: 400px;
+	background: #fff;
+   padding: 2%;
+   margin: auto;
+   margin-top: 100px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login_content h2{
+     font-size: 1.4em;
+     font-weight: 600;
+}     
+     
+.login_button{
+   display: block;
+   margin:auto;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   width:75%;
+	padding: 11px 25px;
+	font-family: serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+	
+	background: #1c1c1c;
+	border: 1px solid #777;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login_button:hover {
+	background: #f0ad4e;
+	border: 1px solid rgba(256,256,256,0.75);
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.login_button:focus {
+	position: relative;
+	bottom: -1px;
+	
+	background: #f0ad4e;
+	
+	box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}
+

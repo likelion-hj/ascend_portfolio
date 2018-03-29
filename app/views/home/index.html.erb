@@ -1,0 +1,38 @@
+<%= render 'login' %>
+<div class="container">
+			<div id="splitlayout" class="splitlayout">
+				<div class="intro">
+					<div class="side side-left">
+						<div class="intro-content">
+							<div class="profile"><img src="img/profile1.jpg" alt="profile1"></div>
+							<h1 style="padding-top: 25px;">About Me<span></span><span>lolol</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<div class="side side-right">
+						<div class="intro-content">
+							<div class="profile2"><img src="img/profile2.png" alt="profile2"></div>
+							<h1 style="padding-top: 15px;"><span>Portfolio </span><span>my work</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+				</div><!-- /intro -->
+				
+				
+				<div class="page page-right">
+					<div class="page-inner">
+						<%= render 'page_right' %>
+					</div><!-- /page-inner -->
+				</div><!-- /page-right -->
+				<div class="page page-left">
+					<div class="page-inner">
+						<%= render 'page_left' %>
+					</div><!-- /page-inner -->
+				</div><!-- /page-left -->
+				<a href="#" class="back back-right" title="back to intro">&rarr;</a>
+				<a href="#" class="back back-left" title="back to intro">&larr;</a>
+			</div><!-- /splitlayout -->
+		</div><!-- /container -->
+		
+		<script src="js/classie.js"></script>
+		<script src="js/cbpSplitLayout.js"></script>
